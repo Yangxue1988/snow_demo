@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>snow_code</title>
-</head>
-<body name="service">
-　　<h2>你好，世界</h2>
+---
+　　layout: default
+　　title: 你好，世界
+　　---
+
+　　<h2>{{ page.title }}</h2>
+
 　　<p>我的第一篇文章</p>
-</body>
-</html>
+
+　　<p>{{ page.date | date_to_string }}</p>
